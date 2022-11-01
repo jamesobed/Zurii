@@ -16,7 +16,7 @@ const myREsponse: Details = {
 };
 /* GET users Details. */
 router.get("/", function (req, res, next) {
-  res.send(JSON.stringify(myREsponse));
+  res.status(200).json(myREsponse);
 });
 
 export default router;
